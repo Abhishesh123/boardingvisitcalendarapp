@@ -83,6 +83,19 @@ DATABASES = {
 }
 
 
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE':'django.contrib.gis.db.backends.postgis',
+#         'NAME': 'dogcalenderapp',
+#         'USER': 'postgres',
+#         'PASSWORD': 'postgres@2020',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
+
+
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 

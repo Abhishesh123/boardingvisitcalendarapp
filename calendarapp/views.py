@@ -81,11 +81,10 @@ class EventEdit(generic.UpdateView):
 
 @login_required(login_url='signup')
 def event_details(request, day):
-    event = Event.objects.filter(start_time__day=str(day))
+    event = Event.objects.filter(start_time__day=str(day)).order_by('-start_time')
     context = {
         'eventmember': event
     }
-    # print('context',context)
     return render(request, 'event-details.html', context)
 
 
