@@ -24,6 +24,8 @@ Event Details
                   <th>Start Date</th>
                   <th>End  date</th>
                   <th>Action</th>
+                                    <th>Action</th>
+
                 </tr>
               </thead>
               <tbody>
@@ -33,7 +35,9 @@ Event Details
                     <td>{{ data.first_name }} {{ data.last_name }}</td>
                     <td>{{ data.start_time }}</td>
                     <td>{{ data.start_time }}</td>
-                   
+                     <td>
+                                    <a class="btn btn-info right mr-2" href="{% url 'calendarapp:event_edit' data.id %}"> Edit Dogs </a>
+                    </td>
                     
                     <td>
                         <a class="btn btn-danger" href="{% url 'calendarapp:remove_event' data.id %}">Remove</a>
